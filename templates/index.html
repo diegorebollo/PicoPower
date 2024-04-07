@@ -1,0 +1,56 @@
+{% args ip, is_pinging, last_run_time, auto_turn_on %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="static/favicon.png">
+    <link rel="stylesheet" href="static/mvp.css" />
+    <link rel="stylesheet" href="static/custom.css" />
+    <title>PicoPower</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/" id="name">PicoPower</a>
+        <ul>
+          <li><a href="/install">Settings</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <aside>
+          <table>
+            <tbody>
+              <tr>
+                <td>Auto Turn On:</td>
+                <td><b>{% if (auto_turn_on)%}Enable{% else %}Disable{% endif %}</b></td>
+              </tr>
+              <tr>
+                <td>Status:</td>
+                <td>{{ ip }} is <b>{% if (is_pinging)%}ON{% else %}OFF{% endif %}</b></td>
+              </tr>
+              <tr>
+                <td>Last Run Time:</td>
+                <td>{{ last_run_time }}</td>
+              </tr>
+              <tr>
+                <td id="center"><a href="/on-off">{% if (is_pinging)%}OFF{% else %}ON{% endif %}</a></td>
+                <td><a href="/reset">Reset</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </aside>
+      </section>
+    </main>
+    <footer id="footer">
+      <hr />
+      <p>
+        <small>© <a href="https://www.drebollo.com">drebollo.com</a></small>
+      </p>
+    </footer>
+  </body>
+</html>

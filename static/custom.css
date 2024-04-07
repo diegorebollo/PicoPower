@@ -1,0 +1,53 @@
+main {
+  padding: 0;
+}
+
+header {
+  padding-top: 0;
+}
+
+#install-header {
+  padding-bottom: 2rem;
+}
+
+#install-nav {
+  margin-bottom: 0;
+}
+
+footer hr {
+  margin-bottom: 0.5rem;
+}
+
+small a {
+  color: #999999;
+}
+
+section aside {
+  width: auto;
+  height: auto;
+}
+
+table {
+  border: 0;
+}
+
+td {
+  text-align: center;
+}
+
+#center {
+  text-align: center;
+}
+
+#name {
+  color: #000000;
+}
+
+#footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 1rem;
+}

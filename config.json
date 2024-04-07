@@ -1,0 +1,1 @@
+{"ssid": "SSID", "pin_relay": 15, "password": "PASSWORD", "ip": "192.0.1.1", "ping_interval": 4, "initial_config": "False", "auto_turn_on": "True"}
